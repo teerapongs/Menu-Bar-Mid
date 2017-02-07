@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xG4-9n-VeC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ACTIVITY-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UZX-8w-Ps6" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="64" width="375" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="NaB-tt-15Y"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TYk-0R-PPD">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5e-Qc-SVr">
+                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UZX-8w-Ps6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2Af-M0-CfK"/>
+                            <constraint firstItem="C5e-Qc-SVr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5io-QK-c4m"/>
+                            <constraint firstAttribute="trailing" secondItem="C5e-Qc-SVr" secondAttribute="trailing" id="Bq4-3h-uKh"/>
+                            <constraint firstAttribute="trailing" secondItem="UZX-8w-Ps6" secondAttribute="trailing" id="Fsx-q2-ckS"/>
+                            <constraint firstItem="C5e-Qc-SVr" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Wbx-JQ-fHX"/>
+                            <constraint firstItem="C5e-Qc-SVr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="128" id="f6F-dh-V85"/>
+                            <constraint firstItem="UZX-8w-Ps6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kXa-Xv-x2U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ACTIVITY" id="nV1-mS-fwc"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="UZX-8w-Ps6" id="KOL-A9-BnL"/>
+                        <outlet property="containerView" destination="C5e-Qc-SVr" id="rh1-2w-8VR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2935.1999999999998" y="123.68815592203899"/>
+        </scene>
+        <!--Active-->
+        <scene sceneID="RHo-MC-aBP">
+            <objects>
+                <viewController id="Zav-Qi-FXb" customClass="ViewController" customModule="MenuBarTest4" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KM2-Vg-TuI"/>
+                        <viewControllerLayoutGuide type="bottom" id="UW7-G8-VgX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oy0-gw-6oN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqh-fQ-4y1">
+                                <rect key="frame" x="0.0" y="136" width="375" height="531"/>
+                            </scrollView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="brq-fe-Mju" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="64" width="375" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="ZxL-yM-piQ"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wwg-s9-rQY">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KD2-TN-zRI">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mqh-fQ-4y1" firstAttribute="leading" secondItem="oy0-gw-6oN" secondAttribute="leadingMargin" constant="-16" id="4Xe-mr-9dO"/>
+                            <constraint firstItem="brq-fe-Mju" firstAttribute="leading" secondItem="oy0-gw-6oN" secondAttribute="leading" id="DQN-yy-4JD"/>
+                            <constraint firstItem="brq-fe-Mju" firstAttribute="top" secondItem="KM2-Vg-TuI" secondAttribute="bottom" id="Eml-4A-Bh1"/>
+                            <constraint firstItem="mqh-fQ-4y1" firstAttribute="centerY" secondItem="oy0-gw-6oN" secondAttribute="centerY" constant="68" id="Nzx-cm-Qua"/>
+                            <constraint firstItem="mqh-fQ-4y1" firstAttribute="top" secondItem="KM2-Vg-TuI" secondAttribute="bottom" constant="72" id="YLy-Im-M5z"/>
+                            <constraint firstAttribute="trailing" secondItem="brq-fe-Mju" secondAttribute="trailing" id="ZJk-jB-VZN"/>
+                            <constraint firstItem="mqh-fQ-4y1" firstAttribute="centerX" secondItem="oy0-gw-6oN" secondAttribute="centerX" id="mPn-gO-I6Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Active" id="iaR-d1-pnH"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="brq-fe-Mju" id="6SE-vl-MWz"/>
+                        <outlet property="containerView" destination="mqh-fQ-4y1" id="2YI-oH-fAu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tg5-6J-W9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3808.8000000000002" y="857.72113943028489"/>
+        </scene>
+        <!--Child View Controller2-->
+        <scene sceneID="XIJ-a5-ThR">
+            <objects>
+                <viewController id="FKY-GO-XB6" customClass="ChildViewController2" customModule="MenuBarTest4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xWP-SJ-3HY"/>
+                        <viewControllerLayoutGuide type="bottom" id="X0v-lo-R1P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lSD-St-bBK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbW-oq-aXi">
+                                <rect key="frame" x="164" y="231" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UbW-oq-aXi" firstAttribute="leading" secondItem="lSD-St-bBK" secondAttribute="leadingMargin" constant="148" id="H1J-ME-dQo"/>
+                            <constraint firstItem="UbW-oq-aXi" firstAttribute="top" secondItem="xWP-SJ-3HY" secondAttribute="bottom" constant="211" id="MSA-3n-MU7"/>
+                            <constraint firstItem="UbW-oq-aXi" firstAttribute="centerX" secondItem="lSD-St-bBK" secondAttribute="centerX" id="wOT-ij-0wt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvr-L1-Zp6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4602" y="124"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="VhD-LN-LHM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SUJ-Zb-6fm" customClass="NavController" customModule="MenuBarTest4" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="vww-TP-KRF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="chv-dh-J3F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="41Z-nZ-i1U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ftp-kf-grf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="123.68815592203899"/>
+        </scene>
+        <!--Nav Controller-->
+        <scene sceneID="m7f-mR-oPF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xG4-9n-VeC" customClass="NavController" customModule="MenuBarTest4" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Kh-OO-yWj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zav-Qi-FXb" kind="relationship" relationship="rootViewController" id="MWp-KW-YyI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOd-4J-nr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2935.1999999999998" y="857.72113943028489"/>
+        </scene>
+    </scenes>
+</document>
